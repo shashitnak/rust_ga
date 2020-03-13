@@ -5,8 +5,9 @@
 //! 
 //! A simple framework for testing genetic algorithms.
 
+mod ga;
 /// Module containing Population struct and Genome trait
-pub mod ga;
+pub use ga::*;
 
 #[cfg(test)]
 mod tests {
