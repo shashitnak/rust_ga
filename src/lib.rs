@@ -1,8 +1,11 @@
 #![allow(unused)]
+#![deny(missing_docs)]
 
 //! # Rust GA
 //! 
 //! A simple framework for testing genetic algorithms.
+
+/// Module containing Population struct and Genome trait
 pub mod ga;
 
 #[cfg(test)]

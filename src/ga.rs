@@ -16,6 +16,7 @@ fn rex(start: usize, end: usize) -> usize {
     start + radint(end - start)
 }
 
+/// Population struct that stores the population of genomes
 pub struct Population<T: Genome> {
     genomes: Vec<T>,
     prob: Vec<f64>
@@ -94,10 +95,16 @@ impl<T: Genome> Population<T> {
     }
 }
 
+/// Trait required for a DNA to ge added to Population
 pub trait Genome {
+    /// Creates a new Genome
     fn new() -> Self;
+    /// Computes the fitness of the Genome
     fn fitness(&self) -> f64;
+    /// Creates a new Genome by crossing over 2 Genomes
     fn cross(&self, other: &Self) -> Self;
+    /// Mutates a Genome
     fn mutate(self) -> Self;
+    /// Displays the Genome
     fn display(&self);
 }
