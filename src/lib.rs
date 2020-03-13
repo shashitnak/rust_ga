@@ -1,11 +1,30 @@
 #![allow(unused)]
 
+//! # Rust GA
+//! 
+//! ```
+//! A simple framework for testing genetic algorithms.
+//! ```
 pub mod ga;
 
 #[cfg(test)]
 mod tests {
 
     use super::ga::*;
+
+    use rand::Rng;
+
+    fn random() -> f64 {
+        rand::thread_rng().gen()
+    }
+
+    fn radint(num: usize) -> usize {
+        ((num as f64) * random()) as usize
+    }
+
+    fn rex(start: usize, end: usize) -> usize {
+        start + radint(end - start)
+    }
 
     const TARGET: [char; 20] = ['T', 'o', ' ', 'b', 'e', ',',
         ' ', 'o', 'r', ' ', 'n', 'o', 't', ' ', 't', 'o', ' ', 'b', 'e', '.'];
