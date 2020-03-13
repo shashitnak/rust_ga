@@ -1,5 +1,5 @@
 [package]
-name = "rust-ga"
+name = "rust_ga"
 license = "MIT"
 version = "0.1.5"
 authors = ["Shashi Kant <shashitnak@gmail.com>"]
