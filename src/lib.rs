@@ -2,9 +2,7 @@
 
 //! # Rust GA
 //! 
-//! ```
 //! A simple framework for testing genetic algorithms.
-//! ```
 pub mod ga;
 
 #[cfg(test)]
