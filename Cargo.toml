@@ -1,11 +1,10 @@
 [package]
-name = "rust_ga"
+name = "rust-ga"
 license = "MIT"
 version = "0.1.4"
 authors = ["Shashi Kant <shashitnak@gmail.com>"]
 edition = "2018"
 description = "A simple framework for testing genetic algorithms."
-documentation = "https://docs.rs/rust_ga/"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
