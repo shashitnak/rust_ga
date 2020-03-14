@@ -28,7 +28,7 @@ impl<T: Genome> Population<T> {
     ///  # Examples
     /// ```
     /// // Gene type need to implement the Genome trait for this to work
-    /// let mut population: Population<Gene> = Population
+    /// let mut population: Population<Gene> = Population::new(size);
     /// ```
     pub fn new(size: usize) -> Self {
         Self {
